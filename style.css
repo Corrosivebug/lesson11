@@ -1,0 +1,275 @@
+.wraper{
+    width: 1000px;
+    height: 800px;
+    border: 2px solid red;
+    margin: 120px auto;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+.header{
+    width: 1500px;
+    height: 1000px;
+    display: flex;
+}
+.box_wraper1{
+    position: absolute;
+    line-height: 100%;
+    background-color: yellow;
+    height: 80px;
+    width: 1000px;
+
+}
+.box_wraper2{
+    position: fixed;
+    line-height: 50%;
+    background-color: rgb(230, 230, 2);
+    height: 80px;
+    width: 1000px;
+    z-index: 1;
+}
+.box_wraper3{
+    position: relative;
+    line-height: 100%;
+    background-color: rgb(200, 200, 2);
+    height: 80px;
+}
+.box_wraper4{
+    position: static;
+    line-height: 100%;
+    background-color: rgb(144, 144, 0);
+    height: 80px;
+}
+.box_wraper5{
+    position: sticky    ;
+    line-height: 100%;
+    background-color: rgb(0, 0, 119);
+    height: 80px;
+}
+.box_wraper6{
+    position: static;
+    line-height: 100%;
+    background-color: rgb(0, 0, 182);
+    height: 80px;
+}
+.box_wraper7{
+    line-height: 100%;
+    background-color: rgb(1, 1, 211);
+    height: 80px;
+}
+.box_wraper8{
+    line-height: 100%;
+    background-color: blue;
+    height: 80px;
+}
+
+ul li{
+    position: relative;
+    list-style: none;
+    padding-left: 20px;
+}
+ul li:before{
+    content: "«";
+    background-color: red;
+    width: 15px;
+    height: 5px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+}
+ul li::after{
+    content: "«";
+    background-color: red;
+    width: 15px;
+    height: 5px;
+    position: absolute;
+    top: 7px;
+    left: 80px;
+}
+.box{
+    width: 500px;
+    height: 700px;
+    background-color: blue;
+    margin: 0 auto;
+    clip-path: polygon(12% 15%, 40% 45%,);
+}
+.insta_header{
+    width: 350px;
+    height: 350px;
+    border: 5px solid none;
+    border-radius: 20%;
+    background-color: pink;
+}
+.sloi_1{
+    width: 250px;
+    height: 250px;
+    border-radius: 20%;
+    position: relative;
+    left: 50px;
+    top: 50px;
+    background-color: white;
+}
+.sloi_2{
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    position: relative;
+    left: 25px;
+    top: -5px;
+    background-color: pink;
+
+}
+.sloi_3{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    position: relative;
+    left: 40px;
+    top: 40px;
+    background-color: white;
+
+}
+.sloi_4{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    position: relative;
+    left: 25px;
+    top: 25px;
+    background-color: pink;
+
+}
+.sloi{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: relative;
+    left: 180px;
+    top: 50px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+.dop{
+    width: 360px;
+    height: 100%;
+    border-right: 2px solid black;
+}
+.pencil {
+    animation: .5s linear 1s infinite alternate slidein;
+    position: relative;
+    top: 200px;
+    width: 90px;
+    background-color: saddlebrown;
+    border-radius: 8px;
+    height: 300px;
+    box-shadow: 1px -35px 60px -20px chocolate;
+}
+.top {
+    position: relative;
+    bottom: 190px;
+    width: 100%;
+    height:140px;
+    background-color: rgb(88, 41, 13);
+    clip-path: polygon(50% 0%, 100% 91%, 100% 100%, 0% 100%, 0% 90%);
+
+}
+.sterjen {
+    position: relative;
+    bottom: 130px;
+    left: 23px;
+    width: 48%;
+    height: 60px;
+    background-color: black;
+    clip-path: polygon(50% 0%, 100% 91%, 100% 100%, 0% 100%, 0% 90%);
+    z-index: 1;
+
+}
+.left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 310px;
+    width: 30px;
+    background-color: yellow;
+    border-bottom-left-radius:10px ;
+    animation: harper 2s cubic-bezier(0.63,-0.17, 0.82, 0.97) infinite;
+    border-radius: 100px 100px 0 55px;
+
+
+}
+.center {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    height: 310px;
+    width: 30px;
+    background-color: grey;
+    animation: hamper 2s cubic-bezier(0.63,-0.17, 0.82, 0.97) infinite;
+    border-radius: 100px 100px 0 0;
+
+}
+.right {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    height: 310px;
+    width: 30px;
+    background-color: yellow;
+    border-bottom-right-radius:10px ;
+    animation: harper 2s cubic-bezier(0.63,-0.17, 0.82, 0.97) infinite;
+    border-radius: 100px 100px 55px 0;
+}
+
+
+@keyframes hamper {
+    0%{
+        background-color: grey;
+    }
+    10%{
+        background-color: rgb(116, 116, 116);
+    }
+    20%{
+        background-color:rgb(104, 104, 104);
+    }
+    30%{
+        background-color: rgb(95, 95, 95);
+    }
+    40%{
+        background-color: rgb(80, 80, 80);
+    }
+    50%{
+        background-color: rgb(65, 65, 65);
+    }
+    60%{
+        background-color: rgb(36, 36, 36);
+    }
+    70%{
+        background-color: rgb(0, 0, 0);
+    }
+}
+@keyframes harper {
+    0%{
+        background-color: yellow;
+    }
+    10%{
+        background-color: rgb(255, 255, 38);
+    }
+    20%{
+        background-color: rgb(255, 255, 70);
+    }
+    30%{
+        background-color: rgb(253, 253, 113);
+    }
+    40%{
+        background-color: rgb(255, 255, 117);
+    }
+    50%{
+        background-color: rgb(255, 255, 194);
+    }
+    60%{
+        background-color: rgb(255, 255, 211);
+    }
+    70%{
+        background-color: rgb(255, 255, 255);
+    }
+}
